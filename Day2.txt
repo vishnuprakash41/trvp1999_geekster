@@ -1,0 +1,111 @@
+q1.	import java.util.*;
+class Day2 {
+    public static void main(String[] args) {
+       Scanner s = new Scanner(System.in);
+       int d = s.nextInt();
+       int r = d/2;
+       double area = Math.PI*r*r;
+        System.out.println(area);
+    }
+}
+
+
+q2.	import java.util.*;
+class Day1 {
+    public static void main(String[] args) {
+       Scanner s = new Scanner(System.in);
+       double x = s.nextDouble();
+       double y = s.nextDouble();
+       double area = 1.0/2.0*x*y;
+       System.out.println(area);
+    }
+}
+
+
+q3.	import java.util.*;
+class Day1 {
+    public static void main(String[] args) {
+       Scanner s = new Scanner(System.in);
+       int x = s.nextInt();
+       boolean greater = x>1000;
+       System.out.println(greater);
+    }
+}
+
+
+q4.	Attempted the Quiz
+
+q5.	class Day1 {
+    public static void main(String[] args) {
+	Int x = 7+3+4 ;
+	Int x = 12 + 5 + 8 ;
+	Int x= 13/5 + 18/8 ;
+	double x= 12 + 5.0 + 2.76;
+	double x= 12/3 + 13/2;
+	double x=12/3 + 13.0/2;
+	double x=14/2 + 15.0/4;
+	double x= 13/2 % 5/3;
+	double x= 17.0/2 % 16.0/4;
+	System.out.print(x);
+      }
+}
+
+
+q6.	class Day1 {
+    public static void main(String[] args) {
+	boolean ans = 3 > 2;
+	boolean ans = 3 ≥ 3;
+	boolean ans = 4 + 3 > 9;
+	boolean ans = 10 + 8 > 10;
+	boolean ans = 12 != 10;
+	boolean ans = 13 == 13;
+	boolean ans = 14 != 14;
+	boolean ans = 20 == 5*4;
+	boolean ans = 30 != 3+4-10;
+	boolean ans = 20 == 41/2;
+        System.out.print(ans);
+}
+
+
+q7.	import java.util.*;
+class Day1 {
+    public static void main(String[] args) {
+       Scanner s = new Scanner(System.in);
+       double n1 = s.nextDouble();
+       double n2 = s.nextDouble();
+       double n3 = s.nextDouble();
+       double n4 = s.nextDouble();
+       double n5 = s.nextDouble();
+       double sum = n1+n2+n3+n4+n5;
+       double avg = sum/5;
+       System.out.println(sum + " " + avg);
+    }
+}
+
+
+q8.	import java.util.*;
+class Day1 {
+    public static void main(String[] args) {
+       Scanner s = new Scanner(System.in);
+       int n1 = s.nextInt();
+       int n2 = s.nextInt();
+       int n3 = s.nextInt();
+       int n4 = s.nextInt();
+       int pro = n1*n2*n3*n4;
+       System.out.println(pro>1000);
+    }
+}
+
+
+q9.	import java.util.*;
+class Day2 {
+    public static void main(String[] args) {
+       Scanner s = new Scanner(System.in);
+       int n1 = s.nextInt();
+       boolean div = n1%7==0;
+       System.out.println(div);
+    }
+}
+
+
+q10.	Attempted the Quiz
