@@ -1,0 +1,80 @@
+q1.	class Day1 {
+    public static void main(String[] args) {
+        System.out.println("Hello I am enjoying coding");
+    }
+}
+
+
+q2.	class Day1 {
+    public static void main(String[] args) {
+        System.out.println("Hello");
+        System.out.println("I");
+        System.out.println("am");
+        System.out.println("enjoying");
+        System.out.println("coding");
+    }
+}
+
+
+q3.	class Day1 {
+    public static void main(String[] args) {
+        int sum = 100+8+3;
+        int pro = 100*8*3;
+        System.out.println("The sum is " + sum);
+        System.out.println("The product is " + pro);
+        
+    }
+}
+
+
+q4.	class Day1 {
+    public static void main(String[] args) {
+        int diff = 100-40;
+        System.out.println("The difference between is " + diff);
+    }
+}
+
+
+q5.	class Day1 {
+    public static void main(String[] args) {
+        System.out.println("*****");
+        System.out.println("*****");
+        System.out.println("*****");
+        System.out.println("*****");
+        System.out.println("*****");
+        System.out.println("*****");
+    }
+}
+
+
+q6.	class Day1 {
+    public static void main(String[] args) {
+        System.out.println("* *");
+        System.out.println("* *");
+        System.out.println("* *");
+        System.out.println("* *");
+        System.out.println("* *");
+        System.out.println("****");
+    }
+}
+
+
+q7.	class Day1 {
+    public static void main(String[] args) {
+        int lastdigit = 987653 % 10;
+        System.out.println(lastdigit);
+    }
+}
+
+
+q8.	class Day1 {
+    public static void main(String[] args) {
+        int m = 15;
+        int n = 4;
+        System.out.println(m+n);
+        System.out.println(m-n +" "+ m*n);
+    }
+}
+
+
+	
