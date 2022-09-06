@@ -1,0 +1,102 @@
+q1.	import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int x = s.nextInt();
+        int y = s.nextInt();
+        if(x>y)
+            System.out.println(x);
+        else if(y>x)
+            System.out.println(y);
+        else
+            System.out.println(x);
+    }
+}
+
+
+q2.	import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int x = s.nextInt();
+        if(x%2==0)
+            System.out.println("Even");
+        else
+            System.out.println("Odd");
+    }
+}
+
+
+q3.	import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int x = s.nextInt();
+        if(x<500000)
+            System.out.println("No tax to be paid");
+        else
+            System.out.println("Tax to be paid");
+    }
+}
+
+
+q4.	import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int x = s.nextInt();
+        if(x<33)
+            System.out.println(x+4);
+        else
+            System.out.println(x);
+    }
+}
+
+
+q5.	import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner s = new Scanner(System.in);
+        int age = s.nextInt();
+        if(age>=70)
+            System.out.println("Super Senior Citizen");
+        else if(age<70 && age>=59)
+            System.out.println("Senior Citizen");
+        else if(age<59 && age>=18)
+            System.out.println("Adult");
+        else if(age<18 && age>1)
+            System.out.println("Underage");
+        else
+            System.out.println("New Born");
+    }
+}
+
+
+q6.	import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int age = s.nextInt();
+        int sal = s.nextInt();
+        if(age>60)
+            System.out.println(sal+1000);
+        else if(age>40 && age<=60)
+            System.out.println(sal+500);
+        else if(age<=40)
+            System.out.println(sal);
+    }
+}
+
