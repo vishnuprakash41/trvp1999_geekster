@@ -1,0 +1,150 @@
+<h3 class="title">Books Register</h3> 
+
+
+<!-- <form [FormGroup]="userform"> 
+    <div class="row">
+      <div class="row col-sm-5">
+        <h3>My first http</h3><br><br>
+        <div class="form-group">
+          <label for="firstname">FIRST NAME</label>
+          <input                                               
+            type="text" 
+            id="firstname"
+            name="firstname"
+            class="form-control"
+            ngModelControl                           
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="lastname">LAST NAME</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            class="form-control"
+            ngModelControl
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">EMAIL</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            class="form-control"
+            ngModelControl
+            required email
+            #email="ngModel"
+          />
+          <span class="help-block" *ngIf="!email.valid && email.touched">Please enter correct email</span>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">GENDER</label>&nbsp;&nbsp;&nbsp;
+          <input type="radio" value="male" name="gender" ngModelControl />Male
+          <input type="radio" value="female" name="gender" ngModelControl />Female
+        </div>
+
+        <div class="form-group">
+          <label for="ismarried">MARRIED</label>&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="ismarried" ngModelControl />
+        </div>
+      </div>
+
+      <div class="row col-sm-2"></div>
+
+      <div class="row col-sm-5">
+        <div class="form-group" ngModelgroup="address">
+          <div class="form-group">
+            <label for="country">COUNTRY</label>
+            <select id="country" name="country" class="form-control" [ngModelControl]="'India'">
+              <option *ngFor="let c of countryList">
+                {{ c.countryname }}
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="city">CITY</label>
+            <input type="text" name="city" class="form-control" ngModelControl />
+          </div>
+
+          <div class="form-group">
+            <label for="street">STREET</label>
+            <input type="text" name="street" class="form-control" ngModelControl />
+          </div>
+
+          <div class="form-group">
+            <label for="pincode">PINCODE</label>
+            <input type="text" name="pincode" class="form-control" ngModelControl />
+          </div>
+          <br />
+          <div class="form-group">
+            <button type="submit" class="btn btn-info" [disabled]="!userForm.valid">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>  --> 
+
+
+<form [formGroup]="bookForm"> 
+    <div class="row">
+      <div class="row col-sm-5">
+
+        <h3>My first http</h3><br><br>
+
+        <div class="form-group">
+          <label for="bookid">BookID:</label>
+          <input type="text"  id="bookid" name="bookid" formControlName="bookid" class="form-control" autocomplete="off"/>
+        </div>
+
+        <div class="form-group">
+          <label for="bookname">BookNAME:</label>
+          <input type="text" id="bookname" name="bookname" formControlName="bookname" class="form-control" autocomplete="off"/>
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author:</label>
+          <input type="text" id="author" name="author" formControlName="author" class="form-control" autocomplete="off" />
+        </div>
+      </div>
+
+      <div class="row">  
+        <div class="form-group">
+          <button class="btn btn-info" style="margin-top: 10px; margin-right: 10px;" (click)="onPushBook()" [disabled]="!bookForm.valid">Push book</button>
+
+          <!-- <button class="btn btn-warning" style="margin-top: 10px; margin-right: 10px;" (click)="onSave()" [disabled]="!bookForm.valid">Save book</button> -->
+          
+          <button class="btn btn-info" style="margin-top: 10px;" (click)="onGet()">Get book list</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-12">
+          <table class="table">
+              <tr>
+                <td>Book Id</td>
+                <td>Book Name</td>
+                <td>Author</td>
+              </tr>
+              <tr *ngFor="let i of mybooks">
+                <td>{{i.bookid}}</td>
+                <td>{{i.bookname}}</td>
+                <td>{{i.author}}</td>
+                
+              </tr>
+
+          </table>
+
+      </div>
+    </div>
+ 
+
+</form> 
